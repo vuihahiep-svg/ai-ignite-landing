@@ -91,7 +91,7 @@ const ImplementationSection = () => {
             Lộ Trình 12 Tháng (2026–2027)
           </h3>
           <div className="rounded-xl overflow-hidden border border-border bg-card p-6 flex justify-center">
-            <img src={baocao2} alt="Sơ đồ Gantt lộ trình 12 tháng" className="w-full max-w-2xl h-auto object-contain" loading="lazy" />
+            <img src={baocao2} alt="Sơ đồ Gantt lộ trình triển khai AI Thực Chiến 12 tháng (2026-2027) — 3 giai đoạn: Chuẩn bị, Triển khai, Nhân rộng" className="w-full max-w-4xl h-auto object-contain" loading="lazy" />
           </div>
           <p className="text-xs text-muted-foreground text-center mt-3">
             3 giai đoạn: Chuẩn bị (T5-T8/2026) → Triển khai (T9-T12/2026) → Nhân rộng (T1-T4/2027)
