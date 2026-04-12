@@ -902,7 +902,7 @@ LEVEL 3: CLASSROOM TEACHER (GV trực tiếp giảng dạy)
 
 ![Hoàng Hiệp — Chuyên gia Thiết kế Chương trình AI/STEM Thực chiến](image/baocao3.jpeg)
 
-**Hoàng Hiệp**
+**Hoàng Hiệp — Chuyên gia Thiết kế Chương trình AI/STEM Thực chiến**
 
 </div>
 
