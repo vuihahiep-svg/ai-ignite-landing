@@ -45,7 +45,7 @@ const AuthorSection = () => {
             <div className="flex flex-col lg:flex-row items-center gap-6 mb-8">
               <img
                 src={authorImg}
-                alt="Hoàng Hiệp"
+                alt="Hoàng Hiệp — Chuyên gia Thiết kế Chương trình AI/STEM Thực chiến"
                 className="w-40 h-40 rounded-2xl object-cover border-2 border-neon shadow-[var(--shadow-neon)]"
                 loading="lazy"
               />
