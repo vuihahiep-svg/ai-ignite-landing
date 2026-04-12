@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Settings, DollarSign, Shield, Calendar } from "lucide-react";
+import { Settings, DollarSign, Shield, Calendar, ZoomIn } from "lucide-react";
 import baocao2 from "@/assets/baocao2.png";
+import ImageLightbox from "./ImageLightbox";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -23,6 +25,8 @@ const risks = [
 ];
 
 const ImplementationSection = () => {
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+
   return (
     <section id="implementation" className="py-24 relative">
       <div className="container mx-auto px-4 md:px-8">
@@ -36,7 +40,6 @@ const ImplementationSection = () => {
           </h2>
         </motion.div>
 
-        {/* Hub-and-Spoke model */}
         <motion.div {...fadeUp} className="mb-16 p-8 rounded-xl border border-border bg-card text-center">
           <h3 className="text-xl font-bold mb-4">Mô Hình Hub-and-Spoke</h3>
           <p className="text-sm text-muted-foreground mb-6 max-w-xl mx-auto">
@@ -55,7 +58,6 @@ const ImplementationSection = () => {
           </div>
         </motion.div>
 
-        {/* Packages */}
         <motion.div {...fadeUp} className="mb-16">
           <h3 className="text-xl font-bold mb-6 text-center flex items-center justify-center gap-2">
             <DollarSign className="text-primary" size={22} />
@@ -63,10 +65,7 @@ const ImplementationSection = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {packages.map((p, i) => (
-              <div
-                key={p.name}
-                className={`p-6 rounded-xl border bg-card ${i === 0 ? "border-neon animate-pulse-glow" : "border-border"}`}
-              >
+              <div key={p.name} className={`p-6 rounded-xl border bg-card ${i === 0 ? "border-neon animate-pulse-glow" : "border-border"}`}>
                 {i === 0 && <div className="text-xs text-primary font-mono mb-2">★ Khuyến nghị</div>}
                 <h4 className="font-bold mb-2">{p.name}</h4>
                 <div className="text-3xl font-bold text-primary mb-1">{p.perStudent}</div>
@@ -84,21 +83,25 @@ const ImplementationSection = () => {
           </p>
         </motion.div>
 
-        {/* Gantt chart */}
         <motion.div {...fadeUp} className="mb-16">
           <h3 className="text-xl font-bold mb-6 text-center flex items-center justify-center gap-2">
             <Calendar className="text-primary" size={22} />
             Lộ Trình 12 Tháng (2026–2027)
           </h3>
-          <div className="rounded-xl overflow-hidden border border-border bg-card p-4 flex justify-center">
+          <div
+            className="rounded-xl overflow-hidden border border-border bg-card p-4 flex justify-center relative group cursor-zoom-in"
+            onClick={() => setLightboxSrc(baocao2)}
+          >
             <img src={baocao2} alt="Sơ đồ Gantt lộ trình triển khai AI Thực Chiến 12 tháng (2026-2027) — 3 giai đoạn: Chuẩn bị, Triển khai, Nhân rộng" className="w-full h-auto object-contain" loading="lazy" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+              <ZoomIn className="text-white" size={32} />
+            </div>
           </div>
           <p className="text-xs text-muted-foreground text-center mt-3">
             3 giai đoạn: Chuẩn bị (T5-T8/2026) → Triển khai (T9-T12/2026) → Nhân rộng (T1-T4/2027)
           </p>
         </motion.div>
 
-        {/* Risk management */}
         <motion.div {...fadeUp}>
           <h3 className="text-xl font-bold mb-6 text-center flex items-center justify-center gap-2">
             <Shield className="text-primary" size={22} />
@@ -114,6 +117,8 @@ const ImplementationSection = () => {
           </div>
         </motion.div>
       </div>
+
+      <ImageLightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </section>
   );
 };
