@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -32,15 +33,13 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a
-            href="/baocao.md"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/baocao"
             className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:shadow-[var(--shadow-neon)] transition-shadow"
           >
             <Download size={16} />
-            Tải Báo Cáo Đầy Đủ
-          </a>
+            Xem Báo Cáo Đầy Đủ
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -69,15 +68,14 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="/baocao.md"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/baocao"
                 className="flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-sm mt-2"
+                onClick={() => setOpen(false)}
               >
                 <Download size={16} />
-                Tải Báo Cáo Đầy Đủ
-              </a>
+                Xem Báo Cáo Đầy Đủ
+              </Link>
             </div>
           </motion.div>
         )}

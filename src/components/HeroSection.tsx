@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-ai-classroom.jpg";
 
 const HeroSection = () => {
@@ -62,14 +63,12 @@ const HeroSection = () => {
             >
               Khám Phá Chương Trình
             </a>
-            <a
-              href="/baocao.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/baocao"
               className="px-8 py-4 rounded-lg border border-neon-strong text-primary font-semibold text-lg hover:bg-primary/10 transition-all"
             >
               Xem Tài Liệu Dự Án
-            </a>
+            </Link>
           </div>
         </motion.div>
 

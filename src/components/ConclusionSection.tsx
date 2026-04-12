@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import networkBg from "@/assets/ai-network-bg.jpg";
 
 const fadeUp = {
@@ -53,15 +54,13 @@ const ConclusionSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/baocao.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/baocao"
               className="px-8 py-4 rounded-lg bg-primary text-primary-foreground font-bold text-lg hover:shadow-[var(--shadow-neon)] transition-all flex items-center justify-center gap-2"
             >
               <CheckCircle size={20} />
-              Tải Báo Cáo Đầy Đủ
-            </a>
+              Xem Báo Cáo Đầy Đủ
+            </Link>
           </div>
         </motion.div>
       </div>
