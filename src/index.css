@@ -320,9 +320,26 @@
 
 .lightbox-overlay img {
   max-width: 95vw;
-  max-height: 95vh;
+  max-height: 85vh;
   object-fit: contain;
   border-radius: 8px;
+  user-select: none;
+  touch-action: none;
+}
+
+.lightbox-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 9999px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.15s, background 0.15s;
+}
+
+.lightbox-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 @keyframes fadeIn {
