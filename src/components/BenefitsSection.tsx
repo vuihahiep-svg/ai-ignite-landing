@@ -58,8 +58,8 @@ const BenefitsSection = () => {
         {/* Flow chart image */}
         <motion.div {...fadeUp} className="mb-16">
           <h3 className="text-xl font-bold mb-6 text-center">Sơ Đồ Phát Triển Năng Lực</h3>
-          <div className="rounded-xl overflow-hidden border border-border bg-card p-4 flex justify-center">
-            <img src={baocao1} alt="Sơ đồ luồng phát triển năng lực học sinh" className="max-w-full h-auto max-h-[500px] object-contain" loading="lazy" />
+          <div className="rounded-xl overflow-hidden border border-border bg-card p-6 flex justify-center">
+            <img src={baocao1} alt="Sơ đồ luồng phát triển năng lực học sinh" className="w-full max-w-2xl h-auto object-contain" loading="lazy" />
           </div>
           <p className="text-xs text-muted-foreground text-center mt-3">
             Hình 1: Lộ trình phát triển năng lực từ Giai đoạn 0 đến Cấp 3, tương ứng 4 miền NLa–NLd theo QĐ 3439/2025.
