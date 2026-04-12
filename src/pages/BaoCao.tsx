@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import { ArrowLeft, ArrowUp, X } from "lucide-react";
+import { ArrowLeft, ArrowUp, X, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BaoCao = () => {
@@ -61,13 +61,21 @@ const BaoCao = () => {
 
       {lightboxSrc && (
         <div className="lightbox-overlay" onClick={closeLightbox}>
-          <button
-            onClick={closeLightbox}
-            className="absolute top-4 right-4 text-white/80 hover:text-white z-10"
-          >
-            <X size={32} />
-          </button>
-          <img src={lightboxSrc} alt="Xem ảnh đầy đủ" />
+          <div className="absolute top-4 right-4 flex items-center gap-3 z-10">
+            <a
+              href={lightboxSrc}
+              download
+              onClick={(e) => e.stopPropagation()}
+              className="text-white/80 hover:text-white transition-colors"
+              title="Tải ảnh về"
+            >
+              <Download size={28} />
+            </a>
+            <button onClick={closeLightbox} className="text-white/80 hover:text-white transition-colors">
+              <X size={32} />
+            </button>
+          </div>
+          <img src={lightboxSrc} alt="Xem ảnh đầy đủ" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
 
