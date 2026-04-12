@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import networkBg from "@/assets/ai-network-bg.jpg";
 
 const fadeUp = {
