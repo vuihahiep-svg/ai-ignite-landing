@@ -1,4 +1,5 @@
-import { Download } from "lucide-react";
+import { FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   return (
@@ -16,15 +17,13 @@ const FooterSection = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <a
-              href="/baocao.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/baocao"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:shadow-[var(--shadow-neon)] transition-shadow"
             >
-              <Download size={16} />
-              Tải Báo Cáo Đầy Đủ
-            </a>
+              <FileText size={16} />
+              Xem Báo Cáo Đầy Đủ
+            </Link>
           </div>
         </div>
 
