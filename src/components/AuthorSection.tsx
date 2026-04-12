@@ -46,7 +46,7 @@ const AuthorSection = () => {
               <img
                 src={authorImg}
                 alt="Hoàng Hiệp — Chuyên gia Thiết kế Chương trình AI/STEM Thực chiến"
-                className="w-40 h-40 rounded-2xl object-cover border-2 border-neon shadow-[var(--shadow-neon)]"
+                className="w-28 h-28 rounded-2xl object-cover border-2 border-neon shadow-[var(--shadow-neon)]"
                 loading="lazy"
               />
               <div>
