@@ -62,15 +62,26 @@ const BaoCao = () => {
       {lightboxSrc && (
         <div className="lightbox-overlay" onClick={closeLightbox}>
           <div className="absolute top-4 right-4 flex items-center gap-3 z-10">
-            <a
-              href={lightboxSrc}
-              download
-              onClick={(e) => e.stopPropagation()}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                if (!lightboxSrc) return;
+                fetch(lightboxSrc)
+                  .then(res => res.blob())
+                  .then(blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = lightboxSrc.split("/").pop() || "image.png";
+                    a.click();
+                    URL.revokeObjectURL(url);
+                  });
+              }}
               className="text-white/80 hover:text-white transition-colors"
               title="Tải ảnh về"
             >
               <Download size={28} />
-            </a>
+            </button>
             <button onClick={closeLightbox} className="text-white/80 hover:text-white transition-colors">
               <X size={32} />
             </button>
