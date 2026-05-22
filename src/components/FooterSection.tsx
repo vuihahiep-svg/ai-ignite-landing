@@ -9,7 +9,7 @@ const FooterSection = () => {
           <div>
             <div className="font-display text-xl font-bold gradient-neon-text mb-1">AI Thực Chiến</div>
             <p className="text-sm text-muted-foreground">
-              Chương Trình Giáo Dục AI Toàn Diện — Tỉnh Đồng Nai
+              Chương Trình Giáo Dục AI Toàn Diện — Thành Phố Hà Nội
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               Soạn thảo: Hoàng Hiệp — Tháng 04/2026
@@ -28,7 +28,7 @@ const FooterSection = () => {
         </div>
 
         <div className="mt-8 pt-6 border-t border-border text-center text-xs text-muted-foreground">
-          © 2026 AI Thực Chiến. Đề xuất chiến lược gửi Phòng Giáo dục và Đào tạo tỉnh Đồng Nai.
+          © 2026 AI Thực Chiến. Đề xuất chiến lược gửi Phòng Giáo dục và Đào tạo thành phố Hà Nội.
         </div>
       </div>
     </footer>
