@@ -1,10 +1,10 @@
 # BÁO CÁO ĐỀ XUẤT DỰ ÁN CHIẾN LƯỢC
 # "AI THỰC CHIẾN" — CHƯƠNG TRÌNH GIÁO DỤC TRÍ TUỆ NHÂN TẠO TOÀN DIỆN
-## CHO HỌC SINH PHỔ THÔNG TỈNH ĐỒNG NAI
+## CHO HỌC SINH PHỔ THÔNG THÀNH PHỐ HÀ NỘI
 
 ---
 
-> **Kính gửi:** Phòng Giáo dục và Đào tạo tỉnh Đồng Nai
+> **Kính gửi:** Phòng Giáo dục và Đào tạo thành phố Hà Nội
 >
 > **Người soạn thảo & Chịu trách nhiệm triển khai:** Hoàng Hiệp *(xem chi tiết tại Phần VII)*
 >
@@ -1126,6 +1126,6 @@ Các quốc gia láng giềng đã bắt đầu từ năm 2019. Việt Nam có c
 
 ---
 
-*Bản quyền báo cáo thuộc về Hoàng HGiepe và Phòng GD&ĐT tỉnh Đồng Nai. Vui lòng ghi nguồn khi trích dẫn.*
+*Bản quyền báo cáo thuộc về Hoàng HGiepe và Phòng GD&ĐT thành phố Hà Nội. Vui lòng ghi nguồn khi trích dẫn.*
 
 *Phiên bản: 1.0 | Ngày phát hành: Tháng 04/2026*
