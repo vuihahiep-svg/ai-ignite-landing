@@ -18,8 +18,12 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-glass">
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
-        <a href="#" className="font-display text-xl font-bold gradient-neon-text">
-          AI Thực Chiến
+        <a href="#" className="font-display font-bold leading-tight">
+          <span className="block text-lg">
+            <span className="gradient-neon-text">AI</span>{" "}
+            <span className="text-foreground">Cho Em</span>
+          </span>
+          <span className="block text-sm text-muted-foreground">Thực Chiến</span>
         </a>
 
         {/* Desktop */}

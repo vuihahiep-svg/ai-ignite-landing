@@ -24,12 +24,16 @@ const HeroSection = () => {
             <span className="text-sm text-muted-foreground font-mono">Đề xuất chiến lược — Tháng 04/2026</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-2 md:mb-3 font-light leading-snug">
+            Thực Chiến
+          </p>
+
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-3 md:mb-4">
             <span className="gradient-neon-text">AI</span>{" "}
-            <span className="text-foreground">THỰC CHIẾN</span>
+            <span className="text-foreground">CHO EM</span>
           </h1>
 
-          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4 font-light">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4 font-light leading-snug">
             Chương Trình Giáo Dục Trí Tuệ Nhân Tạo Toàn Diện
           </p>
           <p className="text-base md:text-lg gradient-purple-text font-semibold mb-10">

@@ -7,7 +7,13 @@ const FooterSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <div className="font-display text-xl font-bold gradient-neon-text mb-1">AI Thực Chiến</div>
+            <div className="font-display text-xl font-bold leading-tight mb-1">
+              <span className="block">
+                <span className="gradient-neon-text">AI</span>{" "}
+                <span className="text-foreground">Cho Em</span>
+              </span>
+              <span className="block text-base text-muted-foreground font-semibold">Thực Chiến</span>
+            </div>
             <p className="text-sm text-muted-foreground">
               Chương Trình Giáo Dục AI Toàn Diện — Thành Phố Hà Nội
             </p>
@@ -28,7 +34,7 @@ const FooterSection = () => {
         </div>
 
         <div className="mt-8 pt-6 border-t border-border text-center text-xs text-muted-foreground">
-          © 2026 AI Thực Chiến. Đề xuất chiến lược gửi Phòng Giáo dục và Đào tạo thành phố Hà Nội.
+          © 2026 AI Cho Em — Thực Chiến. Đề xuất chiến lược gửi Phòng Giáo dục và Đào tạo thành phố Hà Nội.
         </div>
       </div>
     </footer>
