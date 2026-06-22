@@ -66,6 +66,54 @@ export const BAOCAO_DOCUMENTS: BaocaoDocument[] = [
     path: "/buoihoc/buoi08.md",
     group: "Giáo án buổi học",
   },
+  {
+    id: "ke-hoach-01",
+    label: "1. Tổng quan & Mục tiêu",
+    path: "/ke-hoach/01-tong-quan-muc-tieu.md",
+    group: "Kế hoạch triển khai",
+  },
+  {
+    id: "ke-hoach-02",
+    label: "2. Chương trình đào tạo 3 cấp",
+    path: "/ke-hoach/02-chuong-trinh-dao-tao.md",
+    group: "Kế hoạch triển khai",
+  },
+  {
+    id: "ke-hoach-03",
+    label: "3. Tài liệu, Đánh giá & Chứng nhận",
+    path: "/ke-hoach/03-tai-lieu-danh-gia-chung-nhan.md",
+    group: "Kế hoạch triển khai",
+  },
+  {
+    id: "ke-hoach-04",
+    label: "4. Triển khai, Tổ chức & Giáo viên",
+    path: "/ke-hoach/04-trien-khai-to-chuc-giao-vien.md",
+    group: "Kế hoạch triển khai",
+  },
+  {
+    id: "ke-hoach-05",
+    label: "5. Nguồn lực, Ngân sách & Rủi ro",
+    path: "/ke-hoach/05-nguon-luc-ngan-sach-rui-ro.md",
+    group: "Kế hoạch triển khai",
+  },
+  {
+    id: "ke-hoach-06",
+    label: "6. Pháp lý, KPI, Truyền thông & Bền vững",
+    path: "/ke-hoach/06-phap-ly-kpi-truyen-thong-ben-vung.md",
+    group: "Kế hoạch triển khai",
+  },
+  {
+    id: "ke-hoach-07",
+    label: "7. Kiến nghị, FAQ & Phụ lục",
+    path: "/ke-hoach/07-kien-nghi-faq-phu-luc.md",
+    group: "Kế hoạch triển khai",
+  },
+  {
+    id: "ke-hoach-hop-kien",
+    label: "Nội dung trao đổi với anh Kiên",
+    path: "/ke-hoach/hop-anh-kien.md",
+    group: "Kế hoạch triển khai",
+  },
 ];
 
 export const DEFAULT_BAOCAO_DOC_ID = "baocao";
