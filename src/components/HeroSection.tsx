@@ -37,7 +37,7 @@ const HeroSection = () => {
             Chương Trình Giáo Dục Trí Tuệ Nhân Tạo Toàn Diện
           </p>
           <p className="text-base md:text-lg gradient-purple-text font-semibold mb-10">
-            Cho Học Sinh Phổ Thông Thành Phố Hà Nội
+            Cho Học Sinh Phổ Thông Tỉnh Đồng Nai
           </p>
 
           {/* Stats bar */}

@@ -15,7 +15,7 @@ const FooterSection = () => {
               <span className="block text-base text-muted-foreground font-semibold">Thực Chiến</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Chương Trình Giáo Dục AI Toàn Diện — Thành Phố Hà Nội
+              Chương Trình Giáo Dục AI Toàn Diện — Tỉnh Đồng Nai
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               Soạn thảo: Hoàng Hiệp — Tháng 04/2026
@@ -34,7 +34,7 @@ const FooterSection = () => {
         </div>
 
         <div className="mt-8 pt-6 border-t border-border text-center text-xs text-muted-foreground">
-          © 2026 AI Cho Em — Thực Chiến. Đề xuất chiến lược gửi Phòng Giáo dục và Đào tạo thành phố Hà Nội.
+          © 2026 AI Cho Em — Thực Chiến. Đề xuất chiến lược gửi Phòng Giáo dục và Đào tạo tỉnh Đồng Nai.
         </div>
       </div>
     </footer>
