@@ -108,6 +108,12 @@ export const BAOCAO_DOCUMENTS: BaocaoDocument[] = [
     path: "/ke-hoach/07-kien-nghi-faq-phu-luc.md",
     group: "Kế hoạch triển khai",
   },
+  {
+    id: "de-xuat-trinh-bay",
+    label: "Đề xuất trình bày",
+    path: "/ke-hoach/de-xuat-trinh-bay.md",
+    group: "Kế hoạch triển khai",
+  },
 ];
 
 export const DEFAULT_BAOCAO_DOC_ID = "baocao";
