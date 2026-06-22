@@ -108,12 +108,6 @@ export const BAOCAO_DOCUMENTS: BaocaoDocument[] = [
     path: "/ke-hoach/07-kien-nghi-faq-phu-luc.md",
     group: "Kế hoạch triển khai",
   },
-  {
-    id: "ke-hoach-hop-kien",
-    label: "Nội dung trao đổi với anh Kiên",
-    path: "/ke-hoach/hop-anh-kien.md",
-    group: "Kế hoạch triển khai",
-  },
 ];
 
 export const DEFAULT_BAOCAO_DOC_ID = "baocao";
